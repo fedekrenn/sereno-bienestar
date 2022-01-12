@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Íconos -->
+    <link rel="shortcut icon" href="../assets/icons/SB.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Sereno Bienestar - Un lugar para encontrarte contigo mismo</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="../index.html"><img src="../assets/images/Logo-transparente.png" alt="Logo de Sereno Bienestar" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="noSeleccionado">Inicio</a></li>
+                <li><a href="../pages/servicios.html" class="noSeleccionado">Servicios</a></li>
+                <li><a href="../pages/contacto.html" class="linkActivo">Contacto</a></li>
+                <li><a href="../pages/quienes-somos.html" class="noSeleccionado">Quienes somos</a></li>
+                <li><a href="../pages/relatos.html" class="noSeleccionado">Relatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedorContacto">
+            <div class="contenedorFormulario">
+                <form class="formulario" action="mailto:fedekrenn@hotmail.com" method="post">
+                    <label for="nombre__apellido">Nombre completo:</label>
+                    <input type="text" name="nombre__apellido" id="nombre__apellido" required>
+                    <label for="casilla__email">Correo electrónico:</label>
+                    <input type="email" name="casilla__email" required id="casilla__email" placeholder="tunombre@ejemplo.com">
+                    <label for="telefono__contacto">Teléfono de contacto:</label>
+                    <input type="tel" name="telefono__contacto" id="telefono__contacto">
+                    <label for="comentarios__adicionales">Dejanos tu consulta:</label>
+                    <textarea name="comentarios__adicionales" id="comentarios__adicionales" cols="30" rows="10"></textarea>
+                    <input class="btm" type="submit" name="envio" value="Enviar">
+                    <input class="btm" type="reset" name="envio" value="Borrar">
+                </form>
+            </div>
+            <div class="contenedorDatos">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, ad repellendus omnis a sapiente expedita autem illum, quibusdam praesentium numquam recusandae ut vero maxime velit maiores, quod rem! Aut laudantium placeat nam ipsam? Itaque qui atque amet ipsam? Quam, quibusdam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, velit?</p>
+                <h2>3517601034</h2>
+                <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.128193939197!2d-64.16676428525942!3d-31.383028601778612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432983c3dca07f1%3A0x9e2e40d2acb5a2e8!2sManagua%201624%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1639616940000!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+        <p>Diseñado por Federico Krenn - 2021</p>
+    </footer>
+</body>
+
+</html>
