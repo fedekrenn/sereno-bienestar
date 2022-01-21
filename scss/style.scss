@@ -1,0 +1,303 @@
+//Bases
+@import "./base/variables";
+@import "./base/reset";
+@import "./base/typo";
+
+//Layouts de pages
+
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./components/animacionHeader";
+@import "./layouts/index";
+@import "./layouts/contacto";
+@import "./layouts/quienesSomos";
+@import "./layouts/relatos";
+@import "./layouts/servicios";
+
+
+/* Estilos generales */
+
+
+input,
+label,
+textarea {
+  display: block;
+  width: 80%;
+  height: 40px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#comentarios__adicionales {
+  height: 200px;
+}
+
+.btm {
+  font-size: 1.1rem;
+  display: inline;
+  width: 100px;
+  border-radius: 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #6e293b;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 40px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #f0a1b6;
+}
+
+li {
+  list-style: none;
+  margin: 20px;
+  font-size: 1.2rem;
+}
+
+iframe {
+  width: 70%;
+  height: 280px;
+}
+
+img {
+  width: 100%;
+}
+
+.cuadroSombreado {
+  box-shadow: 5px 5px 15px;
+  border: 2px solid #6e293b;
+  border-radius: 15px;
+}
+
+/* Mobile last - tamaño para tablets */
+
+@media (max-width: 1000px) {
+  /* Estilos generales */
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  /* Página principal */
+
+  header img {
+    width: 15vw;
+  }
+
+  li {
+    margin: 10px;
+    font-size: 1rem;
+  }
+
+  .barraDeContenido h1 {
+    font-size: 2rem;
+  }
+
+  .barraDeContenido p {
+    padding: 0px;
+    font-size: 0.7rem;
+    width: 40%;
+    line-height: 12px;
+  }
+
+  .botonContacto {
+    display: none;
+  }
+
+  .barraDeContenido {
+    height: 360px;
+  }
+
+  .tarjetaHija {
+    height: 400px;
+    padding: 2%;
+  }
+
+  .tarjetaHija p {
+    font-size: 0.7rem;
+  }
+
+  .tarjetaHija i {
+    font-size: 1.6rem;
+  }
+
+  /* Servicios */
+
+  .tarjetaServicios {
+    width: 50%;
+    padding: 20px;
+    box-shadow: 12px 10px 24px -7px rgba(0, 0, 0, 0.75);
+  }
+
+  /* Contacto */
+
+  iframe.googleMap {
+    height: 160px;
+  }
+
+  label {
+    font-size: 1.1rem;
+  }
+
+  /* Quienes somos */
+
+  .contenedorPrincipal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px;
+  }
+
+  .logoSereno {
+    width: 20%;
+  }
+
+  .quienesSomos__contenedor,
+  .mision__contenedor {
+    width: 90%;
+    margin: 40px;
+  }
+
+  .misionHijo {
+    flex-direction: column;
+  }
+
+  .mision__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px 0px 50px 0px;
+  }
+
+  .mision__contenedor p {
+    width: 90%;
+    padding: 20px;
+  }
+
+  /* Relatos */
+
+  .grilla {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  iframe {
+    width: 90%;
+  }
+}
+
+/* Barra de navegación a menos de 650px */
+
+@media (max-width: 650px) {
+  li {
+    font-size: 2vw;
+  }
+
+  .linkActivo {
+    font-weight: bold;
+    border: inherit;
+    background-color: inherit;
+    color: #f0a1b6;
+    border-radius: inherit;
+    padding: inherit;
+  }
+}
+
+/* Mobile last - tamaño para celulares */
+
+@media (max-width: 500px) {
+  /* Inicio */
+
+  .barraDeContenido {
+    padding-right: 0px;
+    height: 30vh;
+  }
+
+  .barraDeContenido p {
+    display: none;
+  }
+
+  .tarjetaPadre {
+    flex-direction: column;
+    padding: 40px;
+    margin: 0px;
+  }
+
+  .tarjetaHija {
+    width: 100%;
+    height: auto;
+    margin: 20px 0px 20px 0px;
+    padding: 15px;
+  }
+
+  /* Servicios */
+
+  .contenedorServicios {
+    flex-direction: column;
+  }
+
+  .tarjetaServicios {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  /* Contacto */
+
+  .contenedorContacto {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+  }
+
+  .contenedorFormulario,
+  .contenedorContacto,
+  .contenedorDatos {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contenedorDatos {
+    height: 120vh;
+  }
+
+  .contenedorDatos h1 {
+    margin: 0px;
+  }
+
+  /* Quienes somos */
+
+  .misionHijo img {
+    display: none;
+  }
+
+  .quienesSomos__contenedor {
+    min-height: 400px;
+  }
+
+  .mision__contenedor {
+    height: auto;
+  }
+
+  /* Relatos */
+
+  .grilla {
+    grid-template-columns: 100%;
+  }
+}

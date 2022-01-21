@@ -1,0 +1,25 @@
+header img {
+    width: 20vh;
+    margin-left: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6e4953;
+  }
+  
+  header ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .linkActivo {
+    font-weight: bold;
+    border: 2px solid #f0a1b6;
+    background-color: #f0a1b6;
+    color: #6e4953;
+    border-radius: 20px;
+    padding: 5px 40px 5px 40px;
+  }

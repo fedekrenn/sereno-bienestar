@@ -1,0 +1,35 @@
+.contenedorContacto {
+    display: flex;
+    background-image: url(../assets/images/fondo-formulario.jpg);
+    background-size: cover;
+    height: 800px;
+  }
+  
+  .contenedorFormulario {
+    color: #f0a1b6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px;
+    width: 40%;
+    font-size: 1.5rem;
+  }
+  
+  .contenedorDatos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: whitesmoke;
+  }
+  
+  .contenedorDatos h1,
+  .contenedorDatos h2 {
+    color: #f0a1b6;
+  }
+  
+  .googleMap {
+    border-radius: 3px;
+  }
+  
