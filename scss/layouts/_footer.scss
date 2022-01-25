@@ -1,21 +1,21 @@
 .footer {
-    background-color: #6e4953;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
-  
-  /* Logo de Whatsapp */
-  
-  .fa-whatsapp {
-    position: fixed;
-    bottom: 5%;
-    right: 1%;
-    color: white;
-    font-size: 3rem;
-    background-color: #3ec34f;
-    padding: 0.6rem;
-    border-radius: 50%;
-  }
+  background-color: $colorHeader;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Logo de Whatsapp */
+
+.fa-whatsapp {
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+  color: white;
+  font-size: 3rem;
+  background-color: $colorWhatsapp;
+  padding: 0.6rem;
+  border-radius: 50%;
+}

@@ -1,15 +1,12 @@
 .noSeleccionado {
-    transition: 0.4s;
-    position: relative;
+  transition: 0.4s;
+  position: relative;
+  &:hover {
+    color: $colorAnimacion;
   }
-  
-  .noSeleccionado:hover {
-    color: #ed5880;
-  }
-  
-  .noSeleccionado::after {
+  &::after {
     content: "";
-    background-color: #ed5880;
+    background-color: $colorAnimacion;
     width: 100%;
     height: 3px;
     position: absolute;
@@ -19,8 +16,8 @@
     transform-origin: right;
     transition: transform 0.5s;
   }
-  
-  .noSeleccionado:hover::after {
+  &:hover::after {
     transform-origin: left;
     transform: scaleX(1);
   }
+}

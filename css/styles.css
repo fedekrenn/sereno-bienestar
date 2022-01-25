@@ -5,19 +5,17 @@
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif; }
 
-header img {
-  width: 20vh;
-  margin-left: 20px; }
-
-.header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #6e4953; }
-
-header ul {
-  display: flex;
-  flex-wrap: wrap; }
+  header img {
+    width: 20vh;
+    margin-left: 20px; }
+  header ul {
+    display: flex;
+    flex-wrap: wrap; }
 
 .linkActivo {
   font-weight: bold;
@@ -49,189 +47,23 @@ header ul {
 .noSeleccionado {
   transition: 0.4s;
   position: relative; }
+  .noSeleccionado:hover {
+    color: #ed5880; }
+  .noSeleccionado::after {
+    content: "";
+    background-color: #ed5880;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s; }
+  .noSeleccionado:hover::after {
+    transform-origin: left;
+    transform: scaleX(1); }
 
-.noSeleccionado:hover {
-  color: #ed5880; }
-
-.noSeleccionado::after {
-  content: "";
-  background-color: #ed5880;
-  width: 100%;
-  height: 3px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s; }
-
-.noSeleccionado:hover::after {
-  transform-origin: left;
-  transform: scaleX(1); }
-
-.barraDeContenido {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  background-image: url(../assets/images/cabecera-index.jpg);
-  background-size: cover;
-  background-position-y: 360px;
-  height: 350px;
-  padding-right: 50px; }
-
-.barraDeContenido h1 {
-  font-size: 2.5rem;
-  color: white;
-  margin: 40px;
-  text-shadow: 2px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black; }
-
-.barraDeContenido p {
-  width: 50%;
-  padding: 20px;
-  text-align: justify; }
-
-.botonContacto {
-  border: 2px solid #6e293b;
-  border-radius: 20px;
-  padding: 5px 20px 5px 20px;
-  margin: 0 30px 20px 0;
-  box-shadow: 2px 2px 10px -1px; }
-
-.botonContacto a {
-  color: #6e293b; }
-
-.tarjetaPadre {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 70px 0 70px 0; }
-
-.tarjetaHija {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 25%;
-  text-align: center;
-  padding: 30px;
-  height: 500px; }
-
-.tarjetaHija i {
-  font-size: 2.5rem;
-  color: #6e293b; }
-
-.tarjetaHija p {
-  text-align: justify; }
-
-.contenedorContacto {
-  display: flex;
-  background-image: url(../assets/images/fondo-formulario.jpg);
-  background-size: cover;
-  height: 800px; }
-
-.contenedorFormulario {
-  color: #f0a1b6;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 30px;
-  width: 40%;
-  font-size: 1.5rem; }
-
-.contenedorDatos {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  color: whitesmoke; }
-
-.contenedorDatos h1,
-.contenedorDatos h2 {
-  color: #f0a1b6; }
-
-.googleMap {
-  border-radius: 3px; }
-
-/* Quienes somos */
-.contenedorPrincipal {
-  display: flex;
-  justify-content: space-around;
-  margin: 80px 0px 80px 0px; }
-
-.quienesSomos__contenedor {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 30%;
-  padding: 15px; }
-
-.mision__contenedor {
-  width: 60%; }
-
-.misionHijo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.misionHijo img {
-  width: 20vw;
-  margin: 5%;
-  border-radius: 16px;
-  box-shadow: 6px 6px 16px; }
-
-.mision__contenedor p {
-  width: 60%;
-  text-align: justify;
-  padding: 30px 25px 20px 10px; }
-
-.logoSereno {
-  width: 40%; }
-
-.quienesSomos__contenedor p {
-  text-align: justify;
-  margin: 5%; }
-
-/* Relatos */
-.grilla {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 350px 350px;
-  align-items: center;
-  justify-items: stretch;
-  height: auto;
-  margin-bottom: 80px; }
-
-.hijo__grilla {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.hijo__grilla h3 {
-  margin: 30px; }
-
-.contenedorServicios {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 60px 20px 60px 20px; }
-
-.tarjetaServicios {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: justify;
-  padding: 30px;
-  width: 30%;
-  height: 300px;
-  box-shadow: 12px 10px 24px -7px rgba(0, 0, 0, 0.75); }
-
-.parrafoLeyenda {
-  text-align: center;
-  margin: 25px; }
-
-/* Estilos generales */
 input,
 label,
 textarea {
@@ -285,13 +117,62 @@ img {
   border: 2px solid #6e293b;
   border-radius: 15px; }
 
-/* Mobile last - tamaño para tablets */
 @media (max-width: 1000px) {
   /* Estilos generales */
   h1 {
     font-size: 2rem; }
   h2 {
-    font-size: 1.3rem; }
+    font-size: 1.3rem; } }
+
+.barraDeContenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-image: url(../assets/images/cabecera-index.jpg);
+  background-size: cover;
+  background-position-y: 360px;
+  height: 350px;
+  padding-right: 50px; }
+  .barraDeContenido h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin: 40px;
+    text-shadow: 2px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black; }
+  .barraDeContenido p {
+    width: 50%;
+    padding: 20px;
+    text-align: justify; }
+
+.botonContacto {
+  border: 2px solid #6e293b;
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+  margin: 0 30px 20px 0;
+  box-shadow: 2px 2px 10px -1px; }
+  .botonContacto a {
+    color: #6e293b; }
+
+.tarjetaPadre {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 70px 0 70px 0; }
+
+.tarjetaHija {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25%;
+  text-align: center;
+  padding: 30px;
+  height: 500px; }
+  .tarjetaHija i {
+    font-size: 2.5rem;
+    color: #6e293b; }
+  .tarjetaHija p {
+    text-align: justify; }
+
+@media (max-width: 1000px) {
   /* Página principal */
   header img {
     width: 15vw; }
@@ -312,21 +193,116 @@ img {
   .tarjetaHija {
     height: 400px;
     padding: 2%; }
-  .tarjetaHija p {
-    font-size: 0.7rem; }
-  .tarjetaHija i {
-    font-size: 1.6rem; }
-  /* Servicios */
-  .tarjetaServicios {
-    width: 50%;
-    padding: 20px;
-    box-shadow: 12px 10px 24px -7px rgba(0, 0, 0, 0.75); }
-  /* Contacto */
+    .tarjetaHija p {
+      font-size: 0.7rem; }
+    .tarjetaHija i {
+      font-size: 1.6rem; } }
+
+@media (max-width: 768px) {
+  /* Inicio */
+  .barraDeContenido {
+    padding-right: 0px;
+    height: 30vh; }
+    .barraDeContenido p {
+      display: none; }
+  .tarjetaPadre {
+    flex-direction: column;
+    padding: 40px;
+    margin: 0px; }
+  .tarjetaHija {
+    width: 100%;
+    height: auto;
+    margin: 20px 0px 20px 0px;
+    padding: 15px; } }
+
+.contenedorContacto {
+  display: flex;
+  background-image: url(../assets/images/fondo-formulario.jpg);
+  background-size: cover;
+  height: 800px; }
+
+.contenedorFormulario {
+  color: #f0a1b6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 30px;
+  width: 40%;
+  font-size: 1.5rem; }
+
+.contenedorDatos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: whitesmoke; }
+
+.contenedorDatos h1,
+.contenedorDatos h2 {
+  color: #f0a1b6; }
+
+.googleMap {
+  border-radius: 3px; }
+
+@media (max-width: 1000px) {
   iframe.googleMap {
     height: 160px; }
   label {
-    font-size: 1.1rem; }
-  /* Quienes somos */
+    font-size: 1.1rem; } }
+
+@media (max-width: 800px) {
+  .contenedorContacto {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto; }
+  .contenedorFormulario,
+  .contenedorContacto,
+  .contenedorDatos {
+    width: 100%;
+    padding: 20px; }
+  .contenedorDatos {
+    height: 120vh; }
+  .contenedorDatos h1 {
+    margin: 0px; } }
+
+.contenedorPrincipal {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 0px 80px 0px; }
+
+.quienesSomos__contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  padding: 15px; }
+  .quienesSomos__contenedor p {
+    text-align: justify;
+    margin: 5%; }
+
+.mision__contenedor {
+  width: 60%; }
+  .mision__contenedor p {
+    width: 60%;
+    text-align: justify;
+    padding: 30px 25px 20px 10px; }
+
+.misionHijo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .misionHijo img {
+    width: 20vw;
+    margin: 5%;
+    border-radius: 16px;
+    box-shadow: 6px 6px 16px; }
+
+.logoSereno {
+  width: 40%; }
+
+@media (max-width: 1000px) {
   .contenedorPrincipal {
     flex-direction: column;
     align-items: center;
@@ -345,16 +321,79 @@ img {
     flex-direction: column;
     justify-content: space-around;
     padding: 50px 0px 50px 0px; }
-  .mision__contenedor p {
-    width: 90%;
-    padding: 20px; }
-  /* Relatos */
+    .mision__contenedor p {
+      width: 90%;
+      padding: 20px; } }
+
+@media (max-width: 500px) {
+  .misionHijo img {
+    display: none; }
+  .quienesSomos__contenedor {
+    min-height: 400px; }
+  .mision__contenedor {
+    height: auto; } }
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 350px 350px;
+  align-items: center;
+  justify-items: stretch;
+  height: auto;
+  margin-bottom: 80px; }
+
+.hijo__grilla {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .hijo__grilla h3 {
+    margin: 30px; }
+
+@media (max-width: 1000px) {
   .grilla {
     grid-template-columns: 1fr 1fr; }
   iframe {
     width: 90%; } }
 
-/* Barra de navegación a menos de 650px */
+@media (max-width: 500px) {
+  .grilla {
+    grid-template-columns: 100%; } }
+
+.contenedorServicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 60px 20px 60px 20px; }
+
+.tarjetaServicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: justify;
+  padding: 30px;
+  width: 30%;
+  height: 300px;
+  box-shadow: 12px 10px 24px -7px rgba(0, 0, 0, 0.75); }
+
+.parrafoLeyenda {
+  text-align: center;
+  margin: 25px; }
+
+@media (max-width: 1000px) {
+  .tarjetaServicios {
+    width: 50%;
+    padding: 20px;
+    box-shadow: 12px 10px 24px -7px rgba(0, 0, 0, 0.75); } }
+
+@media (max-width: 500px) {
+  .contenedorServicios {
+    flex-direction: column; }
+  .tarjetaServicios {
+    width: 100%;
+    height: auto;
+    margin-top: 30px; } }
+
 @media (max-width: 650px) {
   li {
     font-size: 2vw; }
@@ -365,52 +404,3 @@ img {
     color: #f0a1b6;
     border-radius: inherit;
     padding: inherit; } }
-
-/* Mobile last - tamaño para celulares */
-@media (max-width: 500px) {
-  /* Inicio */
-  .barraDeContenido {
-    padding-right: 0px;
-    height: 30vh; }
-  .barraDeContenido p {
-    display: none; }
-  .tarjetaPadre {
-    flex-direction: column;
-    padding: 40px;
-    margin: 0px; }
-  .tarjetaHija {
-    width: 100%;
-    height: auto;
-    margin: 20px 0px 20px 0px;
-    padding: 15px; }
-  /* Servicios */
-  .contenedorServicios {
-    flex-direction: column; }
-  .tarjetaServicios {
-    width: 100%;
-    height: auto;
-    margin-top: 30px; }
-  /* Contacto */
-  .contenedorContacto {
-    flex-direction: column-reverse;
-    align-items: center;
-    height: auto; }
-  .contenedorFormulario,
-  .contenedorContacto,
-  .contenedorDatos {
-    width: 100%;
-    padding: 20px; }
-  .contenedorDatos {
-    height: 120vh; }
-  .contenedorDatos h1 {
-    margin: 0px; }
-  /* Quienes somos */
-  .misionHijo img {
-    display: none; }
-  .quienesSomos__contenedor {
-    min-height: 400px; }
-  .mision__contenedor {
-    height: auto; }
-  /* Relatos */
-  .grilla {
-    grid-template-columns: 100%; } }

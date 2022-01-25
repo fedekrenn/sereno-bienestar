@@ -1,63 +1,128 @@
 .barraDeContenido {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    background-image: url(../assets/images/cabecera-index.jpg);
-    background-size: cover;
-    background-position-y: 360px;
-    height: 350px;
-    padding-right: 50px;
-  }
-  
-  .barraDeContenido h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-image: url(../assets/images/cabecera-index.jpg);
+  background-size: cover;
+  background-position-y: 360px;
+  height: 350px;
+  padding-right: 50px;
+  h1 {
     font-size: 2.5rem;
     color: white;
     margin: 40px;
     text-shadow: 2px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black,
       0px -1px 0px black;
   }
-  
-  .barraDeContenido p {
+  p {
     width: 50%;
     padding: 20px;
     text-align: justify;
   }
-  
-  .botonContacto {
-    border: 2px solid #6e293b;
-    border-radius: 20px;
-    padding: 5px 20px 5px 20px;
-    margin: 0 30px 20px 0;
-    box-shadow: 2px 2px 10px -1px;
+}
+
+.botonContacto {
+  border: 2px solid $colorTitulos;
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+  margin: 0 30px 20px 0;
+  box-shadow: 2px 2px 10px -1px;
+  a {
+    color: $colorTitulos;
   }
-  
-  .botonContacto a {
-    color: #6e293b;
-  }
-  
-  .tarjetaPadre {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 70px 0 70px 0;
-  }
-  
-  .tarjetaHija {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 25%;
-    text-align: center;
-    padding: 30px;
-    height: 500px;
-  }
-  
-  .tarjetaHija i {
+}
+
+.tarjetaPadre {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 70px 0 70px 0;
+}
+
+.tarjetaHija {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25%;
+  text-align: center;
+  padding: 30px;
+  height: 500px;
+  i {
     font-size: 2.5rem;
-    color: #6e293b;
+    color: $colorTitulos;
   }
-  
-  .tarjetaHija p {
+  p {
     text-align: justify;
   }
-  
+}
+
+@media (max-width: 1000px) {
+  /* Página principal */
+
+  header {
+    img {
+      width: 15vw;
+    }
+  }
+
+  li {
+    margin: 10px;
+    font-size: 1rem;
+  }
+
+  .barraDeContenido {
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      padding: 0px;
+      font-size: 0.7rem;
+      width: 40%;
+      line-height: 12px;
+    }
+  }
+
+  .botonContacto {
+    display: none;
+  }
+
+  .barraDeContenido {
+    height: 360px;
+  }
+
+  .tarjetaHija {
+    height: 400px;
+    padding: 2%;
+    p {
+      font-size: 0.7rem;
+    }
+    i {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  /* Inicio */
+
+  .barraDeContenido {
+    padding-right: 0px;
+    height: 30vh;
+    p {
+      display: none;
+    }
+  }
+
+  .tarjetaPadre {
+    flex-direction: column;
+    padding: 40px;
+    margin: 0px;
+  }
+
+  .tarjetaHija {
+    width: 100%;
+    height: auto;
+    margin: 20px 0px 20px 0px;
+    padding: 15px;
+  }
+}

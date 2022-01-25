@@ -1,0 +1,15 @@
+@media (max-width: 650px) {
+    li {
+      font-size: 2vw;
+    }
+  
+    .linkActivo {
+      font-weight: bold;
+      border: inherit;
+      background-color: inherit;
+      color: $colorLinks;
+      border-radius: inherit;
+      padding: inherit;
+    }
+  }
+  

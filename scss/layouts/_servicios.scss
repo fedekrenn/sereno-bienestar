@@ -1,24 +1,43 @@
 .contenedorServicios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 60px 20px 60px 20px;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 60px 20px 60px 20px;
+}
+
+.tarjetaServicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: justify;
+  padding: 30px;
+  width: 30%;
+  height: 300px;
+  box-shadow: 12px 10px 24px -7px rgba(0, 0, 0, 0.75);
+}
+
+.parrafoLeyenda {
+  text-align: center;
+  margin: 25px;
+}
+
+@media (max-width: 1000px) {
   .tarjetaServicios {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: justify;
-    padding: 30px;
-    width: 30%;
-    height: 300px;
+    width: 50%;
+    padding: 20px;
     box-shadow: 12px 10px 24px -7px rgba(0, 0, 0, 0.75);
   }
-  
-  .parrafoLeyenda {
-    text-align: center;
-    margin: 25px;
+}
+
+@media (max-width: 500px) {
+  .contenedorServicios {
+    flex-direction: column;
   }
-  
+
+  .tarjetaServicios {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+}
