@@ -13,10 +13,8 @@ textarea {
 }
 
 .btm {
-  font-size: 1.1rem;
-  display: inline;
-  width: 100px;
-  border-radius: 20px;
+  @include botonContacto (100px);
+  
 }
 
 h1,

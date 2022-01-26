@@ -5,10 +5,8 @@
 }
 
 .quienesSomos__contenedor {
-  display: flex;
+  @extend %estiloFlex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: 30%;
   padding: 15px;
   p {
@@ -27,9 +25,7 @@
 }
 
 .misionHijo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @extend %estiloFlex;
   img {
     width: 20vw;
     margin: 5%;

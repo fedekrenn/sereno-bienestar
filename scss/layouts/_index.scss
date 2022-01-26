@@ -23,14 +23,7 @@
 }
 
 .botonContacto {
-  border: 2px solid $colorTitulos;
-  border-radius: 20px;
-  padding: 5px 20px 5px 20px;
-  margin: 0 30px 20px 0;
-  box-shadow: 2px 2px 10px -1px;
-  a {
-    color: $colorTitulos;
-  }
+  @include botonContacto (180px);
 }
 
 .tarjetaPadre {

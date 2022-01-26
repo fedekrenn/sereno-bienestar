@@ -1,5 +1,22 @@
+//Colores
+
 $colorAnimacion: #ed5880;
 $colorTitulos: #6e293b;
 $colorLinks: #f0a1b6;
 $colorHeader: #6e4953;
 $colorWhatsapp: #3ec34f;
+$colorFacebook: #3b5998;
+$colorTwitter: #00acee;
+$colorLinkedin: #0e76a8;
+$colorInstagram: #D872B5;
+
+
+
+//Extend
+
+%estiloFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
