@@ -1,0 +1,13 @@
+*Se comprimen las imágenes, ya que fueron tomadas de un repositorio online y eran muy pesadas (> 4Mb aprox) y se establecieron alrededor de 150kb. 
+
+*También ya desde los inicios del diseño se venía trabajando con archivos SVG, por ejemplo los íconos de las redes
+
+*Se cambiaron los Lorem por textos adecuados.
+
+*Se agregó meta keywords en cada página haciendo hincapié en los términos más pertinentes que trata cada page.
+
+*Se generaron títulos únicos para cada página del site
+
+*Se agregó una meta description en cada page del site.
+
+*Se creó sitemap.xml
