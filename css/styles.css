@@ -4,6 +4,11 @@ header, .quienesSomos__contenedor, .misionHijo {
   justify-content: space-between;
   align-items: center; }
 
+.mainIndex, .mainServicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .fa-linkedin {
   color: #0e76a8; }
 
@@ -23,13 +28,17 @@ header, .quienesSomos__contenedor, .misionHijo {
   font-family: "Noto Sans", sans-serif; }
 
 header {
-  background-color: #6e4953; }
+  height: 20vh;
+  background: #6e4953;
+  background: linear-gradient(180deg, #6e4953 0%, #955b6b 50%, #b05f75 100%); }
   header img {
     width: 20vh;
     margin-left: 20px; }
   header ul {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0; }
 
 .linkActivo {
   font-weight: bold;
@@ -40,7 +49,8 @@ header {
   padding: 5px 40px 5px 40px; }
 
 .footer {
-  background-color: #6e4953;
+  background: #6e4953;
+  background: linear-gradient(0deg, #6e4953 0%, #955b6b 50%, #b05f75 100%);
   height: 15vh;
   display: flex;
   flex-direction: column;
@@ -114,6 +124,7 @@ h1,
 h2,
 h3 {
   font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   color: #6e293b;
   text-align: center; }
 
@@ -127,6 +138,8 @@ h2 {
 a {
   text-decoration: none;
   color: #f0a1b6; }
+  a:hover {
+    color: #6e293b; }
 
 li {
   list-style: none;
@@ -144,6 +157,9 @@ img {
   box-shadow: 5px 5px 15px;
   border: 2px solid #6e293b;
   border-radius: 15px; }
+
+main {
+  min-height: 65vh; }
 
 @media (max-width: 1000px) {
   /* Estilos generales */
@@ -170,7 +186,9 @@ img {
   .barraDeContenido p {
     width: 50%;
     padding: 20px;
-    text-align: justify; }
+    text-align: justify;
+    position: relative;
+    top: -30px; }
 
 .botonContacto {
   border: 2px solid #6e293b;
@@ -205,6 +223,10 @@ img {
   .tarjetaHija p {
     text-align: justify; }
 
+.mainIndex img {
+  width: 70%;
+  margin-bottom: 60px; }
+
 @media (max-width: 1000px) {
   /* Página principal */
   header img {
@@ -215,10 +237,11 @@ img {
   .barraDeContenido h1 {
     font-size: 2rem; }
   .barraDeContenido p {
-    padding: 0px;
+    padding: 10px;
     font-size: 0.7rem;
     width: 40%;
-    line-height: 12px; }
+    line-height: 12px;
+    background-color: rgba(255, 255, 255, 0.5); }
   .botonContacto {
     display: none; }
   .barraDeContenido {
@@ -235,7 +258,9 @@ img {
   /* Inicio */
   .barraDeContenido {
     padding-right: 0px;
-    height: 30vh; }
+    height: 30vh;
+    background-size: cover;
+    background-position-y: 235px; }
     .barraDeContenido p {
       display: none; }
   .tarjetaPadre {
@@ -404,21 +429,34 @@ img {
 
 .parrafoLeyenda {
   text-align: center;
-  margin: 25px; }
+  width: 70%;
+  font-size: .9rem;
+  text-align: center;
+  margin: 50px auto; }
 
-@media (max-width: 1000px) {
+#carouselExampleIndicators {
+  width: 60%;
+  margin: 20px 0 80px 0; }
+
+@media (max-width: 1130px) {
   .tarjetaServicios {
     width: 50%;
     padding: 20px;
-    box-shadow: 12px 10px 24px -7px rgba(0, 0, 0, 0.75); } }
+    box-shadow: 12px 10px 24px -7px rgba(0, 0, 0, 0.75); }
+  .parrafoLeyenda {
+    margin: 10px auto; }
+  .contenedorServicios {
+    margin: 30px 20px 60px 20px; } }
 
-@media (max-width: 500px) {
+@media (max-width: 780px) {
   .contenedorServicios {
     flex-direction: column; }
   .tarjetaServicios {
     width: 100%;
     height: auto;
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  .parrafoLeyenda {
+    font-size: .8rem; } }
 
 @media (max-width: 650px) {
   li {

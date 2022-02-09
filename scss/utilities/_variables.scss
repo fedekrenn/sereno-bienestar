@@ -19,4 +19,10 @@ $colorInstagram: #D872B5;
     justify-content: space-between;
     align-items: center;
   }
+
+%estiloCentrado{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   

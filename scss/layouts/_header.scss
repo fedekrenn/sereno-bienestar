@@ -1,6 +1,8 @@
 header {
   @extend %estiloFlex;
-  background-color: $colorHeader;
+  height: 20vh;
+  background: rgb(110,73,83);
+  background: linear-gradient(180deg, rgba(110,73,83,1) 0%, rgba(149,91,107,1) 50%, rgba(176,95,117,1) 100%);
   img {
     width: 20vh;
     margin-left: 20px;
@@ -8,6 +10,8 @@ header {
   ul {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
   }
 }
 

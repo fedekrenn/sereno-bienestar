@@ -21,6 +21,7 @@ h1,
 h2,
 h3 {
   font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   color: $colorTitulos;
   text-align: center;
 }
@@ -37,6 +38,9 @@ h2 {
 a {
   text-decoration: none;
   color: $colorLinks;
+  &:hover{
+    color: $colorTitulos;
+  }
 }
 
 li {
@@ -58,6 +62,10 @@ img {
   box-shadow: 5px 5px 15px;
   border: 2px solid $colorTitulos;
   border-radius: 15px;
+}
+
+main{
+  min-height: 65vh;
 }
 
 @media (max-width: 1000px) {

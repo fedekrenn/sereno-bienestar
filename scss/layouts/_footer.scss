@@ -1,5 +1,6 @@
 .footer {
-  background-color: $colorHeader;
+  background: rgb(110,73,83);
+  background: linear-gradient(0deg, rgba(110,73,83,1) 0%, rgba(149,91,107,1) 50%, rgba(176,95,117,1) 100%);
   height: 15vh;
   display: flex;
   flex-direction: column;

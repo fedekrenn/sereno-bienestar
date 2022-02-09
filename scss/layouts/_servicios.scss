@@ -1,3 +1,7 @@
+.mainServicios{
+  @extend %estiloCentrado;
+}
+
 .contenedorServicios {
   display: flex;
   flex-wrap: wrap;
@@ -19,18 +23,34 @@
 
 .parrafoLeyenda {
   text-align: center;
-  margin: 25px;
+  width: 70%;
+  font-size: .9rem;
+  text-align: center;
+  margin: 50px auto;
 }
 
-@media (max-width: 1000px) {
+#carouselExampleIndicators{
+  width: 60%;
+  margin: 20px 0 80px 0;
+}
+
+@media (max-width: 1130px) {
   .tarjetaServicios {
     width: 50%;
     padding: 20px;
     box-shadow: 12px 10px 24px -7px rgba(0, 0, 0, 0.75);
   }
+
+  .parrafoLeyenda{
+    margin: 10px auto;
+  }
+
+  .contenedorServicios{
+    margin: 30px 20px 60px 20px;;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 780px) {
   .contenedorServicios {
     flex-direction: column;
   }
@@ -39,5 +59,9 @@
     width: 100%;
     height: auto;
     margin-top: 30px;
+  }
+
+  .parrafoLeyenda{
+    font-size: .8rem;
   }
 }
