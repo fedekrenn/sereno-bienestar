@@ -1,10 +1,11 @@
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
     li {
       font-size: 2vw;
     }
   
     .linkActivo {
       font-weight: bold;
+      text-transform: uppercase;
       border: inherit;
       background-color: inherit;
       color: $colorLinks;

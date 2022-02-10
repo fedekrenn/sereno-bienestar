@@ -7,6 +7,7 @@
   background-size: cover;
   background-position-y: 360px;
   height: 350px;
+  width: 100%;
   padding-right: 50px;
   h1 {
     font-size: 2.5rem;
@@ -75,7 +76,7 @@
 
   .barraDeContenido {
     h1 {
-      font-size: 2rem;
+      font-size: 5vw;
     }
     p {
       padding: 10px;
@@ -111,9 +112,7 @@
 
   .barraDeContenido {
     padding-right: 0px;
-    height: 30vh;
     background-size: cover;
-    background-position-y: 235px;
     p {
       display: none;
     }
@@ -127,8 +126,21 @@
 
   .tarjetaHija {
     width: 100%;
-    height: 40vh;
+    height: auto;
     margin: 20px 0px 20px 0px;
     padding: 15px;
+    i{
+      margin: 20px auto;
+    }
+    h2{
+      margin: 10px auto 30px auto;
+    }
   }
+
+  .mainIndex {
+    img {
+      width: 50%;
+    }
+  }
+
 }

@@ -21,3 +21,14 @@
     transform: scaleX(1);
   }
 }
+
+/* Responsive del botón hamburguesa, se pisa bootstrap */
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    background-color: $colorHeader;
+    border: 1px solid $colorLinks;
+    border-radius: 5px;
+  }
+
+}

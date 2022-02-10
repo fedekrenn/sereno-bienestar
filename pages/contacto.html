@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="consultas, turnos, formulario, contacto, sereno bienestar, teléfono">
-    <meta name="description" content="¿Sugerencias? ¿Consultas? ¿Necesitás despejas tus dudas? Escribinos a través de nuestro formulario o bien ponte en contacto telefónicamente para que lo más pronto posible charlemos.">
+    <meta name="description"
+        content="¿Sugerencias? ¿Consultas? ¿Necesitás despejas tus dudas? Escribinos a través de nuestro formulario o bien ponte en contacto telefónicamente para que lo más pronto posible charlemos.">
     <!-- Link de animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Íconos -->
     <link rel="shortcut icon" href="../assets/icons/SB.png" type="image/x-icon">
     <!-- Mi estilo de CSS -->
@@ -26,17 +30,25 @@
 <body>
     <header class="header">
         <a href="../index.html"><img src="../assets/images/Logo-transparente.png" alt="Logo de Sereno Bienestar"
-                class="logo"></a>
-        <nav>
-            <ul>
-                <li><a href="../index.html" class="noSeleccionado">Inicio</a></li>
-                <li><a href="../pages/servicios.html" class="noSeleccionado">Servicios</a></li>
-                <li><a href="../pages/contacto.html" class="linkActivo">Contacto</a></li>
-                <li><a href="../pages/quienes-somos.html" class="noSeleccionado">Quienes somos</a></li>
-                <li><a href="../pages/relatos.html" class="noSeleccionado">Relatos</a></li>
-            </ul>
+            class="logo"></a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li><a href="../index.html" class="noSeleccionado nav-item">Inicio</a></li>
+                <li><a href="../pages/servicios.html" class="noSeleccionado nav-item">Servicios</a></li>
+                <li><a href="../pages/contacto.html" class="linkActivo nav-item" aria-current="page">Contacto</a></li>
+                <li><a href="../pages/quienes-somos.html" class="noSeleccionado nav-item">Quienes somos</a></li>
+                <li><a href="../pages/relatos.html" class="noSeleccionado nav-item">Relatos</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
-    </header>
+      </header>
 
     <main>
         <div class="contenedorContacto">
@@ -58,7 +70,8 @@
             </div>
             <div class="contenedorDatos">
                 <h1>Consultas y turnos</h1>
-                <p>Para una mejor y más personalizada atención te invitamos a que te contactes con nosotros y a la brevedad estaremos respondiendo tu consulta o te informaremos los turnos disponibles</p>
+                <p>Para una mejor y más personalizada atención te invitamos a que te contactes con nosotros y a la
+                    brevedad estaremos respondiendo tu consulta o te informaremos los turnos disponibles</p>
                 <p>Comunicate también al:</p>
                 <h2>3517601034</h2>
                 <iframe class="googleMap"
@@ -78,6 +91,10 @@
             <a href="https://www.linkedin.com/in/fkrenn/"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
