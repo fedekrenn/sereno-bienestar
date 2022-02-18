@@ -213,6 +213,9 @@ main {
   font-size: 1.1rem; }
   .botonContacto a {
     color: #6e293b; }
+  .botonContacto:hover {
+    transform: scale(1.2);
+    transition: .4s; }
 
 .tarjetaPadre {
   display: flex;
@@ -232,6 +235,8 @@ main {
     color: #6e293b; }
   .tarjetaHija p {
     text-align: justify; }
+  .tarjetaHija:hover {
+    transform: scale(1.2); }
 
 .mainIndex img {
   width: 70%;
@@ -448,6 +453,10 @@ form {
   width: 30%;
   height: 300px;
   box-shadow: 12px 10px 24px -7px rgba(0, 0, 0, 0.75); }
+  .tarjetaServicios:hover {
+    box-shadow: 7px 10px 24px 20px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    transition: 1s; }
 
 .parrafoLeyenda {
   text-align: center;

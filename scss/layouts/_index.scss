@@ -27,6 +27,10 @@
 
 .botonContacto {
   @include botonContacto(180px);
+  &:hover{
+    transform: scale(1.2);
+    transition: .4s;
+  }
 }
 
 .tarjetaPadre {
@@ -49,6 +53,9 @@
   }
   p {
     text-align: justify;
+  }
+  &:hover{
+    transform: scale(1.2);
   }
 }
 

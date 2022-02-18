@@ -4,6 +4,6 @@ Bienvenidos! Este es mi proyecto final de cursada de Desarrollo Web en Coderhous
 
 
 <h2> 🙋‍♂️ Hola, Soy Federico Krenn</h2>
-👀 Me encuentro cursando la carrera de fullstrack developer en Coderhouse <br>
+:nerd_face: Me encuentro cursando la carrera de fullstrack developer en Coderhouse <br>
 🌱 Actualmente estoy cursando JavaScript <br></br>
 📫 Conectemos en Linkedin: https://www.linkedin.com/in/fkrenn/
